@@ -25,6 +25,10 @@ module Framework
       make_current_version
     end
 
+    def make_static
+      make_static_headers
+    end
+
     private
 
     def make_current_version
@@ -45,6 +49,11 @@ module Framework
 
     def make_headers
       @headers_path = @versions_path + Pathname.new('Headers')
+      @headers_path.mkpath unless @headers_path.exist?
+    end
+
+    def make_static_headers
+      @headers_path = Pathname.new('Headers')
       @headers_path.mkpath unless @headers_path.exist?
     end
 
