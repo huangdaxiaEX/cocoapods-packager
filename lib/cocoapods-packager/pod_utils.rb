@@ -30,6 +30,7 @@ module Pod
             target.build_configurations.each do |config|
               config.build_settings['CLANG_MODULES_AUTOLINK'] = 'NO'
               config.build_settings['GCC_GENERATE_DEBUGGING_SYMBOLS'] = 'NO'
+              config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
             end
           end
           static_installer.pods_project.save
