@@ -20,13 +20,13 @@ There are still a number of advantages to developing against a `podspec`, even i
 ## Installation
 
 ```sh
-$ gem install cocoapods-packager
+$ gem install ty-cocoapods-packager
 ```
 
 or add a line to your Gemfile:
 
 ```ruby
-gem "cocoapods-packager"
+gem "ty-cocoapods-packager"
 ```
 
 then run `bundle install`.
